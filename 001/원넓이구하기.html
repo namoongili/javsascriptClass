@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>원 넓이 구하기</title>
+</head>
+<body>
+    <h3>원 넓이 구하기</h3>
+    <input type="" id="radiusInput" placeholder="반지름을 입력하세요" />
+    <button onclick="
+    
+        let radius = document.getElementById('radiusInput').value;
+        let pi = 3.14;
+        let circumference = radius * radius * pi;
+        // circumference = 원주
+        document.getElementById('result').innerText =' 원 넓이는 ' + circumference.toFixed(2) + '입니다.';
+    ">실행</button>
+    <p id="result"></p>
+</body>
+</html>

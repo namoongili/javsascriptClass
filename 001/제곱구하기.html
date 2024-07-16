@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제곱 구하기</title>
+</head>
+<body>
+    <h3>제곱 구하기</h3>
+    <input type="" id="numberInput" placeholder="숫자를 입력하세요" />
+    <button onclick="
+
+        let number = document.getElementById('numberInput').value;
+        let square = number * number;
+        // square = 제곱
+        document.getElementById('result').innerText =number + '의 제곱은' + square + '입니다.';
+    ">실행</button>
+    <p id="result"></p>
+</body>
+</html>

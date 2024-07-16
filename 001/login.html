@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            width: 400px;
+            border: 1px solid black;
+            padding: 20px; /*안쪽여백*/
+            margin: 0 auto; /*상하여백    좌우여백*/    
+        }
+        .img_wrap{
+            width: 200px;
+            border: 1px solid black;
+            height: 200px;
+            margin: 0 auto;
+
+            background-image: url(data:image/png;base64,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);
+            background-position: center;
+            background-size: cover;
+        }
+        .info_wrap{
+            width: 300px;
+            border: 1px solid black;
+            margin: 0 auto;
+            padding: 5px;
+        }
+        .info_wrap_input{
+            width: 98%;
+            height: 30px;
+            margin-bottom: 5px;
+        }
+        .info_wrap_button{
+            width: 100%;
+            height: 30px;
+            border: none;
+            margin-top: 10px;
+        }
+        </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="img_wrap">이미지영역</div>
+        <div class="info_wrap"> 
+                <input type="text" placeholder="ID">
+                <input type="text" placeholder="PASSWORD">
+                <button> 로그인 </button>
+        </div>
+    </div>
+</body>
+</html>
