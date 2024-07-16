@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 입력 : 입력재료    반환값 : 사진
+
+        function 짜파게티(물,면,스프){
+            alert("냄비에 물을 끓인다.");
+            alert("물이 끓으면 면과 건더기스프를 넣는다.");
+            alert("물을 버린다.");
+            alert("스프를 넣고 섞는다.");
+            alert("올리브유를 넣고 불을 끈다.");
+            alert("접시에 담아서 맛있게 먹는다.");
+            return "https://cdn.hankyung.com/photo/202305/01.33451635.1.jpg"
+        }
+        let 물 = "500ml";
+        let 면 = "한개";
+        let 스프 = "총 3개"
+
+        let result = 짜파게티(물, 면, 스프)
+
+        document.write('<img src="' + result + '" width="400px" height="400px">');
+
+    </script>
+</body>
+</html>
