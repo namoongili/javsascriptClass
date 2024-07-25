@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+
+        window.addEventListener("load", function(){
+          
+                new Swiper(  '.promotion .swiper' ,  {
+                    slidesPerView:3 ,
+                    spaceBetween :10 ,
+                    centeredSlides:true,
+                    loop:true,
+                    autoplay: {
+                        delay: 3000
+                    },
+                    
+                    navigation: {
+                        nextEl: '.promotion .swiper-button-next',
+                        prevEl: '.promotion .swiper-button-prev',
+                    }                                         
+
+                    });
+                    
+
+
+        });
+
+        
+    </script>
+
+    <style>
+
+  
+
+ 
+ .swiper{  
+  width:900px;
+  
+  margin: 0 atuo;
+  border:1px solid black;
+}
+  
+.swiper-wrapper{
+    border:1px solid black;
+}
+    .swiper-slide{
+        text-align: center;
+    }
+ 
+
+    .movie {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 220px;
+            margin: 10px;
+            overflow: hidden;
+            text-align: center;
+            border: 1px solid black;
+        }
+        .movie img {
+            width: 100%;
+            height: 300px;
+        }
+        .movie-details {
+            padding: 10px;
+        }
+        .movie-details h2 {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        .movie-details p {
+            margin: 5px 0;
+            color: #777;
+        }
+ 
+    </style>
+</head>
+<body> 
+
+    <section class="notice">
+        
+
+ <!--광고  슬라이더-->
+         <div class="promotion">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">  
+                         <div class="movie">
+                            <img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/izzk8dbmrLowcoGbFaebqJvzyXg.jpg">
+                            <div class="movie-details">
+                                <h2>세븐</h2>
+                                <p>2017 ・ 미국</p>
+                                <p></p>
+                            </div>
+                      </div>
+                 </div>
+                    <div class="swiper-slide">  <div class="movie">
+                        <img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/zAEhUJB5ytmDtjVZP0aooPkdGyq.jpg">
+                        <div class="movie-details">
+                            <h2>유전</h2>
+                            <p>2017 ・ 미국</p>
+                            <p></p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="swiper-slide">   <div class="movie">
+                        <img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/paPvmoLgUUQojsSdAZmf7dwkKGT.jpg">
+                        <div class="movie-details">
+                            <h2>겟아웃</h2>
+                            <p>2017 ・ 미국</p>
+                            <p></p>
+                        </div>
+                    </div></div>   
+                    <div class="swiper-slide">
+                        <div class="movie">
+                            <img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/1RxhzwFkAUqMt215Brb06u8P8pn.jpg" alt="">
+                            <div class="movie-details">
+                                <h2>높은 풀 속에서</h2>
+                                <p>2017 ・ 미국</p>
+                                <p></p>
+                            </div>
+                        </div>              
+               </div>  
+            </div>                   
+                   
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+         </div>
+    </section>
+ <style>
+   
+   /*  style 변경가능하다 */
+    .swipter-pagination{
+        color:#cccccc;
+    }
+    .swiper-button-next{
+        color:#ccc;
+    }
+   .swiper-pagination-bullet-active{
+    background-color: rgb(203, 120, 120);
+   }
+ </style>
+</body>
+</html>
