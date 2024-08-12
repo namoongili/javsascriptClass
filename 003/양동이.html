@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function getFourLiters() {
+        let fiveLiterBucket = 0;
+        let threeLiterBucket = 0;
+    
+        console.log(`초기 상태: 5리터 양동이: ${fiveLiterBucket}리터, 3리터 양동이: ${threeLiterBucket}리터`);
+    
+        // Step 1: 5리터 양동이를 채운다.
+        fiveLiterBucket = 5;
+        console.log(`5리터 양동이를 채운다. => 5리터 양동이: ${fiveLiterBucket}리터, 3리터 양동이: ${threeLiterBucket}리터`);
+    
+        // Step 2: 5리터 양동이에서 3리터 양동이에 물을 옮긴다.
+        threeLiterBucket = 3;
+        fiveLiterBucket -= 3;
+        console.log(`5리터 양동이에서 3리터 양동이에 물을 옮긴다. => 5리터 양동이: ${fiveLiterBucket}리터, 3리터 양동이: ${threeLiterBucket}리터`);
+    
+        // Step 3: 3리터 양동이를 비운다.
+        threeLiterBucket = 0;
+        console.log(`3리터 양동이를 비운다. => 5리터 양동이: ${fiveLiterBucket}리터, 3리터 양동이: ${threeLiterBucket}리터`);
+    
+        // Step 4: 5리터 양동이에 남은 2리터를 3리터 양동이에 옮긴다.
+        threeLiterBucket = fiveLiterBucket;
+        fiveLiterBucket = 0;
+        console.log(`5리터 양동이에 남은 2리터를 3리터 양동이에 옮긴다. => 5리터 양동이: ${fiveLiterBucket}리터, 3리터 양동이: ${threeLiterBucket}리터`);
+    
+        // Step 5: 5리터 양동이를 다시 채운다.
+        fiveLiterBucket = 5;
+        console.log(`5리터 양동이를 다시 채운다. => 5리터 양동이: ${fiveLiterBucket}리터, 3리터 양동이: ${threeLiterBucket}리터`);
+    
+        // Step 6: 5리터 양동이에서 3리터 양동이에 물을 옮긴다. (3리터 양동이는 2리터가 들어있으므로 1리터만 채워진다)
+        fiveLiterBucket -= (3 - threeLiterBucket);
+        threeLiterBucket = 3;
+        console.log(`5리터 양동이에서 3리터 양동이에 물을 옮긴다. (3리터 양동이는 2리터가 들어있으므로 1리터만 채워진다) => 5리터 양동이: ${fiveLiterBucket}리터, 3리터 양동이: ${threeLiterBucket}리터`);
+    
+        // 결과적으로, 5리터 양동이에 정확히 4리터의 물이 남게 됩니다.
+        console.log(`결과: 5리터 양동이에 정확히 ${fiveLiterBucket}리터의 물이 남아 있습니다.`);
+    }
+    
+    getFourLiters();
+    
+</script>
+</body>
+</html>

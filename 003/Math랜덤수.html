@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     
+    <script>
+        let result = math.random(); //0.0 ~ 1 미만의 임의의 실수
+
+        let acornStudents = ["김솔", "김도현", "김무궁", "김세중", "김세현", "김정석", "김채운", "백바울", "소병학", "송병화"];
+
+        let maxlength = acornStudents.length; //24 => (0~23)
+        let randomIndex = maxlength * result;
+
+        alert(randomIndex);
+
+        alert(acornStudents[randomIndex]);
+    </script>
+
+</body>
+</html>

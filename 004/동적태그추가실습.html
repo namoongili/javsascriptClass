@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function createA(){
+            let result = document.getElementById("result"); //result 찾아라
+            alert(result)
+            let a = document.createElement("a");
+            a.style.backgroundColor="blue";
+            a.style.color="white";
+            a.style.textAlign="center";
+            a.style.textDecoration="none";
+
+            a.innerHTML="구글";
+            a.href="https://www.google.com";
+
+            // 태그 추가
+            result.appendChild(a);
+        }
+    </script>
+</head>
+<body>
+    <button onclick="createA()">a태그 생성</button>
+
+    <div id="result"></div>
+</body>
+</html>

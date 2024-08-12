@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나만의갤러리만들기</title>
+    <style>
+        .slide-wrap{
+            width: 500px;
+            position: relative;
+        }
+        
+        .ranking{
+            width: 500px;
+            height: 500px;
+            border: solid 1px black;
+            background-image:url("../images/마카체프.png"); /*다른 폴더에 있을때*/
+            /*같은 폴더에 있으면 url("images/Penguins.png"); 요런식으로*/
+            background-size: cover;
+            background-position: center;
+        }
+
+        .left_btn{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 1px solid white;
+            background-color: white;
+            position: absolute;
+            left: 10px;
+            top : 220px;
+        }
+
+        .right_btn{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: white;
+            border: 1px solid white;
+            position: absolute;
+            right: 10px;
+            top : 220px;
+        }
+    </style>
+
+    <script>
+    let imgNames= ["../images/마카체프.png", 
+         "../images/마카체프.png",
+         "../images/사루키안.png",
+          "../images/올리베이라.png",
+          "../images/개이치.png",
+          "../images/포이리에.png",
+     ] ;
+
+     let index =0; // 이미지배열의 index (0 => 첫번째)
+     function next(){
+        index++;       
+         if( index >= imgNames.length) 
+         index=0; // 배열 끝까지 가면 첫번째로 복귀
+        let gallery = document.querySelector(".ranking");
+        gallery.style.backgroundImage ="url('"+ imgNames[index] +"')"; 
+        gallery.style.backgroundPosition="center"
+        gallery.style.backgroundSize="cover";
+    }
+
+    function pre(){            
+            index--;           
+            if (index <= 0 ) 
+                index = imgNames.length-1;  
+
+            let gallery   =document.querySelector(".ranking");           
+            //gallery.style.backgroundImage =`url('${imgNames[index]}')`; 
+            gallery.style.backgroundImage ="url('"+ imgNames[index] +"')"; 
+            gallery.style.backgroundPosition="center"
+            gallery.style.backgroundSize="cover";     
+         }
+
+     </script>  
+</head>
+<body>
+    <div class="slide-wrap">
+        <div class="ranking"> </div>
+        <div class="left_btn" onclick="pre()">넘</div>
+        <div class="right_btn" onclick="next()">겨</div>
+</body>
+</html>

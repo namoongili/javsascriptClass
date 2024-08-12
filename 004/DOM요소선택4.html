@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        function calAmount(){
+            
+            let amounts = document.querySelectorAll(".amount");
+            
+            for(let i=0; i<amounts.length; i++){//반복문
+            let item = amounts[i];
+            console.log(item);
+            let price = item.innerHTML;
+            price = parseInt(price);
+            //alert(price);
+            sum = sum + price;
+            }
+
+            let span = document.querySelector("#total_amount");
+            span.innerHTML = sum;
+        }
+
+    </script>
+</head>
+<body>
+
+    <h2> querySelector 선택하기 </h2>
+    <p> 선택자에 해당하는 것이 한개여도 배열로 반환됨 (주의!!) </p>
+
+    <div class="amount">100</div>
+    <div class="amount">50</div>
+    <div class="amount">30</div>
+    <div class="amount">150</div>
+    <div class="amount">200</div>
+    
+    합계<span id="total_amount"></span>
+    <button onclick="calAmount">클릭</button>
+</body>
+</html>
