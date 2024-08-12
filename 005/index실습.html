@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .wrap{
+            width: 1900px;
+            border: 1px solid black;
+            margin: 0 auto;
+        }
+
+        header{
+            border: 1px solid black;
+            height: 60px;
+            position: relative;
+            background-color: black;
+        }
+
+        header .img{
+            width: 200px;
+            height: 50px;
+            background-image: url(../images/netflixlogo.jpg);
+            background-position: center;
+            background-size: cover;
+
+            position: absolute;
+            left: 30px;
+            top: 10px;
+        }
+
+        nav{
+            margin-left: 250px;
+        }
+
+        nav ul{
+            display: flex;
+        }
+
+        nav a{
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        nav li{
+            margin-left: 20px;
+        }
+
+        section ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+            justify-content: space-around;
+        }
+
+        section img{
+            display: block;
+            width: 1900px;
+            height: auto;
+
+        }
+
+        .section-content {
+            position: absolute;
+            top: 50%;
+            left: 5%;
+            transform: translateY(-50%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        
+        footer ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            justify-content: space-between;
+            width: 100%;
+            
+        }
+
+        footer img{
+            width: 320px;
+            height: 200px;
+            
+        }
+        .btn {
+            display: inline-block;
+            margin-right: 10px;
+            padding: 10px 20px;
+            color: white;
+            background-color: red;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <!--로고 이미지-->
+            <div class="img"></div>
+        <nav>
+            <ul>
+                <li> <a href="">홈</a></li>
+                <li> <a href="">시리즈</a></li>
+                <li> <a href="">영화</a></li>
+                <li> <a href="">NEW!요즘 대세 컨텐츠</a></li>
+                <li> <a href="">내가 찜한 리스트</a></li>
+                <li> <a href="">언어별로 찾아보기</a></li>
+            </ul>
+        </nav>
+       
+        <div class="searchbutton"></div>
+        </header>
+        <section>
+            <img src="../images/파묘.jpg">
+            <div class="section-content">
+                <p>오늘 영화 순위 1위</p>
+                <p>부유한 집안에서 병마에 시달리는 신생아를 살려달라며
+                    무당을<br>찾아온다. 화근을 추적하던 끝에 드러나는 집안 조상의 무덤.
+                    어쩌면<br> 이 묘에 악령이 깃든 것인지도 모른다.
+                </p>
+                <a href="#" class="btn">재생</a>
+                <a href="#" class="btn">상세 정보</a>
+        </section>
+        <footer>
+            <ul>
+                <li>
+                    <img  src="../images/파묘1.png">
+
+                </li>
+        
+                <li>
+                    <img  src="../images/굿파트너.png">
+
+                </li>
+        
+                <li>
+                    <img  src="../images/바발.png">
+
+                </li>
+        
+                <li>
+                    <img  src="../images/쏘우.png">
+
+                </li>
+        
+                <li>
+                    <img  src="../images/마스터.png">
+
+                </li>
+        
+                <li>
+                    <img  src="../images/마담웹.png">
+
+                </li>
+            </ul>
+        
+        </footer>
+    </div>
+</body>
+</html>
